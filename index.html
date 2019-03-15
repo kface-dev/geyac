@@ -196,14 +196,16 @@
 	<!-- <a class="logo" style="padding-left:20px" href="/"><img src="/img/logo.jpg" style="height:100%;"/></a> -->
 	<div style="text-align:left; line-height:50px; font-size:14px; font-weight:bold; color:white; padding-left:10px;">
 		<span style="font-size:20px; padding:0 10px;">MBC</span>공인중개사무소 <span style="padding-left:8px;">계약 관리시스템</span>
-		<span style="color:red">베타기간 동안에는 현재 계약서 시스템에서 등록,수정한 정보는 반영되지 않습니다.</span>
+
+		<!-- 디자인 변경 -->
+		<span id="beta-warn">베타기간 동안에는 현재 계약서 시스템에서 등록,수정한 정보는 반영되지 않습니다.</span>
 	</div>
 	
 	
 	
 	
     
-	<span style="padding-right:10px; font-size:12px; letter-spacing:1px; word-spacing:7px; position: absolute; right: 0; top:13px; color: white;">
+	<span style="padding-right:10px; font-size:12px; letter-spacing:1px; word-spacing:7px; position: absolute; right: 0; top:16px; color: white;">
 		<span style="margin-right:20px"><span style="font-weight:bold">디디상담원A님</span> 환영합니다.</span>
 		<a href="javascript: f_logout()">로그아웃</a>
 	</span>
@@ -529,8 +531,10 @@ function f_folderConfig(i_gbn){
 						<th style="width:80px" class="ord">만기일</th>
 						<th style="width:130px">계약서 종류</th>
 						<th style="width:60px">구분</th>
-						<th style="width:70px; line-height:17px;">매도인<br/>임대인</th>
-						<th style="width:70px; line-height:17px;">매수인<br/>임차인</th>
+
+						<!-- 디자인 변경 -->
+						<th style="width:150px; line-height:17px;">매도인<br/>임대인</th>
+						<th style="width:150px; line-height:17px;">매수인<br/>임차인</th>
 						<th>소재지</th>
 						<!-- <th style="width:75px">작성상태</th> -->
 					</tr>
@@ -547,7 +551,9 @@ function f_folderConfig(i_gbn){
 						<td><span style="line-height:17px; ">2019-01-21</span></td>
 						<td><span style="line-height:17px; ">2020-01-20</span></td>
 						<td style="text-align:left; padding-left:10px">부동산(다가구주택)</td>
-						<td style="color:blue;">월세</td>
+
+						<!-- 디자인 변경 -->
+						<td class="blue">월세</td>
 						<td>홍길동</td>
 						<td>김갑수</td>
 						<td  style="text-align:left; padding-left:10px; ">경북 포항시 북구 우현동 123-12 체킹빌리지</td>
@@ -565,7 +571,7 @@ function f_folderConfig(i_gbn){
 						<td><span style="line-height:17px; ">2019-01-02</span></td>
 						<td><span style="line-height:17px; ">2020-01-01</span></td>
 						<td style="text-align:left; padding-left:10px">부동산(다가구주택)</td>
-						<td style="color:blue;">월세</td>
+						<td class="blue">월세</td>
 						<td>김표종</td>
 						<td>(주)네트웍오앤에스</td>
 						<td  style="text-align:left; padding-left:10px; ">경북 포항시 북구 장성동 1421-17  하늘애  205호</td>
@@ -583,7 +589,7 @@ function f_folderConfig(i_gbn){
 						<td><span style="line-height:17px; ">2019-01-21</span></td>
 						<td><span style="line-height:17px; ">2020-01-20</span></td>
 						<td style="text-align:left; padding-left:10px">부동산(다가구주택)</td>
-						<td style="color:blue;">월세</td>
+						<td class="blue">월세</td>
 						<td>김표종</td>
 						<td>송송이</td>
 						<td  style="text-align:left; padding-left:10px; ">경북 포항시 북구 장성동 1421-17  하늘애 303호</td>
@@ -601,7 +607,7 @@ function f_folderConfig(i_gbn){
 						<td><span style="line-height:17px; ">2018-12-11</span></td>
 						<td><span style="line-height:17px; ">2019-12-10</span></td>
 						<td style="text-align:left; padding-left:10px">부동산(다가구주택)</td>
-						<td style="color:blue;">월세</td>
+						<td class="blue">월세</td>
 						<td>김표종</td>
 						<td>이혜영</td>
 						<td  style="text-align:left; padding-left:10px; ">경북 포항시 북구 장성동 1421-17  하늘애  201호</td>
@@ -619,7 +625,7 @@ function f_folderConfig(i_gbn){
 						<td><span style="line-height:17px; ">2018-12-01</span></td>
 						<td><span style="line-height:17px; ">2019-11-30</span></td>
 						<td style="text-align:left; padding-left:10px">부동산(다가구주택)</td>
-						<td style="color:blue;">월세</td>
+						<td class="blue">월세</td>
 						<td>김표종</td>
 						<td>(주)세무법인포유포항지점</td>
 						<td  style="text-align:left; padding-left:10px; ">경북 포항시 북구 장성동 1421-17  하늘애  302호</td>
@@ -637,7 +643,7 @@ function f_folderConfig(i_gbn){
 						<td><span style="line-height:17px; ">2018-07-21</span></td>
 						<td><span style="line-height:17px; ">2019-01-20</span></td>
 						<td style="text-align:left; padding-left:10px">부동산(다가구주택)</td>
-						<td style="color:blue;">월세</td>
+						<td class="blue">월세</td>
 						<td>김표종</td>
 						<td>(주)포항건강나라</td>
 						<td  style="text-align:left; padding-left:10px; ">경북 포항시 북구 장성동 1421-17  하늘애 303호</td>
@@ -655,7 +661,7 @@ function f_folderConfig(i_gbn){
 						<td><span style="line-height:17px; "></span></td>
 						<td><span style="line-height:17px; ">2019-11-11</span></td>
 						<td style="text-align:left; padding-left:10px">부동산(다가구주택)</td>
-						<td style="color:blue;">월세</td>
+						<td class="blue">월세</td>
 						<td>김표종</td>
 						<td>김형준</td>
 						<td  style="text-align:left; padding-left:10px; ">경북 포항시 북구 장성동 1421-17  하늘애  106호</td>
@@ -665,7 +671,9 @@ function f_folderConfig(i_gbn){
 				</table>
 				
 				<div class="page">
-					 <a href="javascript:f_goPage(1, 'memberGeyacList.do')"><img src="/img/btn/btn_first.gif" border="0" alt="첫페이지"></a> <b style="color:#F44336; font-weight:bold;">1</b> <a href="javascript:f_goPage(1, 'memberGeyacList.do')"><img src="/img/btn/btn_last.gif" border="0" alt="마지막페이지"></a>				
+
+					<!-- 디자인 변경 -->
+					 <a href="javascript:f_goPage(1, 'memberGeyacList.do')"><img src="/img/btn/btn_first.gif" border="0" alt="첫페이지"></a> <b style="color:#226ab7; font-weight:bold;">1</b> <a href="javascript:f_goPage(1, 'memberGeyacList.do')"><img src="/img/btn/btn_last.gif" border="0" alt="마지막페이지"></a>				
 				</div>
 				
 			</div>

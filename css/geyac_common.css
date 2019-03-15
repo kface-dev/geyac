@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
 @CHARSET "utf-8";
 /*
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
@@ -68,7 +69,7 @@ body {
 	font-family:  /* 'Nanum Brush Script', 'Nanum Gothic',  'êµ´ë¦¼', 'Gulim',  *//*  'Nanum Pen Script',  */ /* 'Nanum Gothic Coding',  */'ë‹ì›€', 'Dotum', 'Segoe UI', 'ARIAL', 'sans-serif', 'tahoma';
 	font-size:13px; 
 	color:#333333;
-	background: #545454 url(/img/pattern/green_cup.png);
+	background-color: #333;
 }
 html, body{
 	height:100%;
@@ -97,34 +98,34 @@ a:hover { text-decoration:none; color:inherit;}
 
 a.btn{
 	display: inline-block;
-    padding: 3px 8px 1px 8px;
-    line-height: 15px;
-    border: 1px solid #555;
-    border-radius: 2px;
+		height: 24px;
+    line-height: 24px;
+    border: 1px solid #444;
+    border-radius: 4px;
     text-align: center;
-    margin: 1px 5px;
+    margin: 1px 2px;
     white-space: nowrap;
-    text-shadow: -1px -1px 0px #5a5a5a;
-    color: #f2f2f2;
-    font-family: 'ë‹ì›€','dotum','Segoe UI','tahoma','ARIAL';
+    color: white;
+    font-family: '돋움','dotum','Segoe UI','tahoma','ARIAL';
     vertical-align: middle;
-    background-color: #6D6A6A;
+		background-color: #555;
+		padding: 0 12px;
 }
 button.btn-search,
 a.btn-search{
 	display: inline-block;
-    padding: 3px 8px 1px 8px;
-    line-height: 28px;
-    border: 1px solid #555;
-    border-radius: 2px;
+		height: 34px;
+		line-height: 34px;
+		padding: 0 8px;
+    border: 1px solid #444;
+    border-radius: 4px;
     text-align: center;
-    margin: 1px 5px;
+    margin: 1px 2px;
     white-space: nowrap;
-    text-shadow: -1px -1px 0px #5a5a5a;
-    color: #f2f2f2;
-    font-family: 'ë‹ì›€','dotum','Segoe UI','tahoma','ARIAL';
+    color: white;
+    font-family: '돋움','dotum','Segoe UI','tahoma','ARIAL';
     vertical-align: middle;
-    background-color: #6D6A6A;
+    background-color: #555;
 	cursor:pointer;
 }
 
@@ -150,8 +151,8 @@ input[type='checkbox']{
 	vertical-align:middle;
 }
 input[type='text']{
-	/* padding-left:5px;
-	padding-right:5px; ë„“ì´ì¡°ì •ì„ ë‹¤ì‹œ ë‹¤ í•´ì•¼í•¨..*/
+	border-radius: 4px;
+	border: 1px solid #aaa;
 }
 
 img{
@@ -181,6 +182,11 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 }
 #wrap { position:relative; min-width:1350px; min-height:100%; } /* 1100 + 200 + íŒ¨ë”© */
 
+#beta-warn {
+	color: tomato;
+	margin-left: 12px;
+}
+
 #gy_container{
 	position:relative;
 }
@@ -194,24 +200,18 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 #lmenu .lmenu_wrap{ color:#e8e8e8; }
 
 #lmenu .lmenu_wrap .mtitle{
-	 border-left: 6px solid cyan; background-color:#2F2F2F; line-height:26px; padding:5px 8px; text-align:left; margin-top:10px;
+	 background-color:#2F2F2F; line-height:26px; padding:5px 8px; text-align:left;
 }
 #lmenu .lmenu_wrap .tree_wrap{
-	padding:0 5px 0 0; color:#000;
+	color:#000;
 }
 
 .tree_wrap .tree_container{
     border-radius: 0;
-    background: #F0EABE;
-    border-left: 7px solid #B2F1F1;
+    background: #f5f1d3;
     padding:10px;
     
 }
-    
-/* ë ˆì´ì•„ì›ƒ  ë 
-========== */
-
-
 
 
 
@@ -221,7 +221,10 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 }
 
 #searchbox_wrap{margin-bottom:20px}
-#searchbox_wrap div.searchbox { border:2px solid #eeeeee; background:white; border-radius:2px; padding:15px 20px }
+#searchbox_wrap div.searchbox { 
+	border:2px solid #eeeeee; background:white; border-radius:2px; padding:16px;
+	border-radius: 4px;
+ }
 #searchbox_wrap div.searchbox select{ 
 	height:36px;
 	padding:8px 5px;
@@ -229,7 +232,7 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 	vertical-align:middle; 
 }
 #searchbox_wrap div.searchbox input{ 
-	height:30px;  line-height:30px; padding-left:8px;
+	height:32px;  line-height:32px; padding-left:8px;
 	vertical-align:middle; 
 }
 #searchbox_wrap div.searchbox input.calpopup{ padding-left:inherit; }
@@ -239,10 +242,13 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 	/* border: 1px solid gray; */
 }
 .listwrap table tr{
-	border-bottom:1px solid #A7A7A7;
+	border-bottom:1px solid #eee;
 }
-.listwrap table tr:hover{
-	background-color: #D0D0D0;
+.listwrap table tr:last-child{
+	border-bottom: 1px solid #ccc;
+}
+.listwrap table tr:hover td{
+	background-color: #f5f5f5;
 	cursor:pointer;
 }
 .listwrap table td{
@@ -250,25 +256,35 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 	height:35px;
 	padding:4px 4px;
 	text-align:center;
-	border-right:1px solid #A7A7A7;
+	border-right:1px solid #eee;
+	background-color: white;
+}
+
+.listwrap table td.blue{
+	color: #226ab7;
 }
 
 .listwrap table td:first-child{
-	border-left:1px solid #A7A7A7;
+	border-left:1px solid #ccc;
 }
+.listwrap table td:last-child{
+	border-right: 1px solid #ccc;
+}
+
 .listwrap table th{
-	line-height:45px;
-	height:45px;
-	background-color:#efefef;
+	line-height:60px;
+	height:60px;
+	background-color:#555;
+	color: white;
 	text-align:center;
-	border-right:1px solid gray;
-	border-bottom:1px solid #404040;
-	border-top:3px solid #404040;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #555;
 	font-weight:bold;
 	vertical-align:middle;
+	overflow: hidden;
 }
-.listwrap table th:first-child{
-	border-left:1px solid gray;
+.listwrap table th:last-child{
+	border-right: 1px solid #555;
 }
 
 
@@ -293,10 +309,10 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 	
 	 
 	margin-left:200px; 
-	border-left: 1px solid #848484; 
-	background-color:white; 
+	border-left: 1px solid #ddd; 
+	background-color:#f8f8f8; 
 	min-height:700px;
-	background: #545454 url(/img/pattern/crossword.png);
+	/* background: #545454 url(/img/pattern/crossword.png); */
 	
 	padding-bottom: 100px;
 	padding-left: 20px;
@@ -307,25 +323,27 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 	padding:20px 0;	
 }
 .content_top_title{
-	padding:20px 0 10px 0; border-bottom:1px solid #E6B1B1;	
+	padding:20px 0 10px 0; border-bottom:1px solid #ddd;	
 }
 .content_top_title > h1{	
-	float:left; font-size:19px; font-weight:bold; border-left:13px solid #C74C4C; padding-left:10px; letter-spacing:2px;
+	float:left; font-size:19px; font-weight:bold;  border-left:8px solid #0085ff; padding-left:10px;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 .rform{
 	width:900px;
 	/* margin:0 auto; */
 }
 .rform span.comment{
-	color: #0000B5;
+	color: #226ab7;
 	font-size:13px;
 }
 
 
 
 .rform_top{
-	 border:2px solid #E6E6E6; background-color:#efefef; padding:10px;
+	 border:2px solid #ddd; background-color:#efefef; padding:10px;
 	 margin-bottom:20px;
+	 border-radius: 4px;
 }
 
 .rform_top p{
@@ -337,7 +355,7 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 	font-weight:bold;
 	display:inline-block;
 	padding-right:7px;
-	width:120px; 
+	width:90px; 
 	text-align:right;
 }
 .rform_top input{
@@ -365,7 +383,6 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 #rform_body{
 	position:relative;
 	border:1px solid gray; 
-	padding:3px;
 	padding-bottom:20px;
 	background-color:white;
 }
@@ -437,17 +454,16 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 
 #rform_body .body table{
 	width:860px; 
-	border: 1px solid gray;
+	border: 1px solid #ccc;
 }
 #rform_body .body table tr{
-	border-bottom:1px solid gray;
+	border-bottom:1px solid #ccc;
 }
 #rform_body .body table td{
-	padding:2px 5px;
+	padding: 4px;
 }
 
 
-/* í‘œì¤€ìž„ëŒ€ì°¨ê³„ì•½ì„œ ê´€ë ¨ */
 #rform_body .body div.cate04{ padding:0 10px; }
 #rform_body .body div.cate04 table{ border: none; }
 #rform_body .body div.cate04 table tr{ border: none; }
@@ -461,7 +477,7 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 	font-size:12px 
 }
 
-#rform_body .body div.cate04_2 table td{ border-right:1px solid gray; height:30px; line-height:30px;}
+#rform_body .body div.cate04_2 table td{ border-right:1px solid #ccc; height:30px; line-height:30px;}
 /*#rform_body .body div.cate04_2 table input[:not radio]{ height:22px; line-height:22px; }*/
 #rform_body .body div.cate04_2 table input{ height:22px; line-height:22px; }
 
@@ -471,15 +487,19 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 
 
 #rform_body .body table th{
-	background-color:#c9c9c9;
+	background-color:#eee;
 	text-align:center;
-	border-right:1px solid gray;
-	border-left:1px solid gray;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	padding: 4px;
 }
 #rform_body .body table input{
 	line-height:22px;
 	height:22px;
 	width:98%;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	/* margin-right: 3px; */
 }
 
 #rform_body .body table input[type="radio"]{
@@ -527,7 +547,7 @@ p.tbl_top_comment{ border:1px solid green; margin-top:15px; background-color:#E9
 #special_agree{ padding: 5px;border: 1px solid #C0C0C0;background-color: #FAF9F9; }
 #special_agree .agree_wrap{ background-color: white; border: 1px solid #eeeeee; }
 #special_agree .agree_wrap textarea{ width: 835px;height: 210px;background-color: white;padding: 5px; border:none; }
-#special_agree .agree_wrap p{ width:835px; padding:5px; color:#E90808; font-weight:500 } 
+#special_agree .agree_wrap p{ width:835px; padding:5px; color:tomato; font-weight:500 } 
 
 #gy_date_wrap{ position:relative; margin-bottom:10px;padding-bottom:6px; }
 #gy_date_wrap > p{ padding-top:10px; padding-left:8px; }
@@ -577,16 +597,17 @@ div.noitem > p.bunyang{
 
 .price_display{
 	position: absolute;
-    right: 0;
+    right: 6px;
     top: 18px;
     font-size:13px; 
-    background-color: #B4D5F5;
-    padding: 2px 5px;
-    border: 1px solid rgb(123, 168, 187);
-    color: #0000B5;
+    background-color:  rgba(0, 133, 255, 0.1);
+    padding: 6px 8px;
+		border: 1px solid rgba(0, 133, 255, 0.2);
+		border-radius: 4px;
+    color: #226ab7;
 }
-.price_display:hover{
-    color: #036700;
+.price_display select {
+	margin: 0 2px;
 }
 /*======================== 
 ê³„ì•½ì„œ ë³¸ë¬¸ ë ==*/
@@ -722,17 +743,23 @@ div.config_tabmenu span.active{
 	position:absolute; top:-125px; right:-220px;
 }
 #quickbar_wrap{
-	width: 200px;background-color: whitesmoke;border: 4px solid #006900;border-radius: 6px;
-	-webkit-box-shadow: 9px 6px 25px -5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 9px 6px 25px -5px rgba(0,0,0,0.75);
-	box-shadow: 9px 6px 25px -5px rgba(0,0,0,0.75);
+	width: 200px;background-color: white;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	-webkit-box-shadow: 2px 4px 8px -2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 4px 8px -2px rgba(0,0,0,0.5);
+	box-shadow: 2px 4px 8px -2px rgba(0,0,0,0.5);
 
 }
 #quickbar_wrap .quickbar_container{padding:10px;}
-#quickbar_wrap .quickbar_container p.title{text-align: center;padding-bottom: 3px;border-bottom: 2px solid #839CD7; margin-bottom:10px; font-size:15px; font-weight:bold; color:#1D4F8D}
+#quickbar_wrap .quickbar_container p.title{
+	text-align:
+	center;padding-bottom: 3px;
+	border-bottom: 2px solid #eee;
+	margin-bottom:10px; font-size:15px; font-weight:bold;}
 #quickbar_wrap .quickbar_container p.item{position:relative;}
 #quickbar_wrap .quickbar_container p.item > span.stat{ position:absolute; right:5px; }
-#quickbar_wrap .quickbar_container textarea{ width:165px; height:60px; padding:5px; font-size:14px; } 
+#quickbar_wrap .quickbar_container textarea{ width:165px; height:60px; padding:5px; font-size:14px; border: 1px solid #ccc;} 
 
 #quickbar .button_wrap{
 	margin-top:10px; 
@@ -740,20 +767,20 @@ div.config_tabmenu span.active{
 
 
 .button_wrap div.bigbtn{
-	border: 2px solid #37C837;
+	border: 1px solid #0085ff;
     border-radius: 3px;
     text-align: center;
     margin-top:5px;
-    background-color: #BADF8C;
-    color: #021C24;
+		background-color: #1991ff;
+		color: white;
     font-size: 15px;
     line-height: 35px; 
     cursor:pointer;
 
 }
 .button_wrap div.bigbtnhover:hover{
-	border: 2px solid #37C837;
-    background-color: green;
+	/* border: 2px solid #37C837; */
+    background-color: #0085ff;
     color: #F1F1F1;
     font-weight:bold;
     -webkit-box-shadow: 9px 8px 12px -10px rgba(9,69,0,0.85);
@@ -762,7 +789,10 @@ div.config_tabmenu span.active{
 }
 
 #print-layer{
-	display:none; padding: 10px; text-align: left;font-size: 13px;line-height: 25px;background-color: rgb(129, 197, 133);border-top: 1px solid #06B506;
+	display:none; padding: 10px; text-align: left;font-size: 13px;line-height: 25px;
+	/* background-color: #54adff; */
+	background-color: white;
+	color: #333;
 	cursor:auto;
 }
     
